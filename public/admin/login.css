@@ -1,0 +1,18 @@
+body { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 1rem; }
+.login-box {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(160deg, #1a0b3d, #0b0520);
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.35), 0 25px 80px rgba(0,0,0,0.6);
+}
+.login-box .moon { width: 70px; height: 70px; margin-bottom: 1rem; }
+.login-box h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+.login-box p { color: var(--text-dim); margin-bottom: 2rem; font-style: italic; }
+.err { color: #ff9a9a; font-size: 0.95rem; margin-top: 0.5rem; min-height: 1.2em; }
+.login-box form label { text-align: left; }

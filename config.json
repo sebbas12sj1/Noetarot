@@ -1,0 +1,146 @@
+{
+  "site": {
+    "title": "Noe Tarot — Lecturas de Tarot",
+    "brand": "Noe Tarot",
+    "tagline": "Las cartas tienen algo que decirte"
+  },
+  "theme": {
+    "gold": "#d4af37",
+    "goldSoft": "#e6c56a",
+    "purple": "#6b3fa0",
+    "bg1": "#0b0520",
+    "bg2": "#1a0b3d"
+  },
+  "packages": [
+    {
+      "id": "una",
+      "title": "1 Pregunta",
+      "description": "Una consulta enfocada en una situación concreta.",
+      "price": 2500,
+      "questions": 1,
+      "icon": "☽",
+      "featured": false
+    },
+    {
+      "id": "tres",
+      "title": "3 Preguntas",
+      "description": "Tres consultas puntuales sobre lo que te inquieta.",
+      "price": 5500,
+      "questions": 3,
+      "icon": "✦",
+      "featured": true
+    },
+    {
+      "id": "general",
+      "title": "Lectura General",
+      "description": "Tirada profunda: pasado, presente y futuro.",
+      "price": 9500,
+      "questions": 0,
+      "icon": "☀",
+      "featured": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "visible": true,
+      "data": {
+        "title": "Lecturas de Tarot",
+        "subtitle": "Las cartas tienen algo que decirte. Escuchá su mensaje.",
+        "ctaText": "Ver consultas"
+      }
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "visible": true,
+      "data": {
+        "title": "Sobre mí",
+        "name": "Noe",
+        "role": "Tarotista · Más de 10 años de experiencia",
+        "body": "Desde chica sentí que las cartas tenían un lenguaje propio. Con los años aprendí a escucharlas y a acompañar a otros en sus procesos. En cada lectura traigo presencia, escucha sin juicio y claridad para que te lleves algo que te sirva.",
+        "image": ""
+      }
+    },
+    {
+      "id": "services",
+      "type": "services",
+      "visible": true,
+      "data": {
+        "title": "Elegí tu consulta",
+        "subtitle": "Todas las lecturas se envían por escrito a tu email al instante."
+      }
+    },
+    {
+      "id": "how",
+      "type": "how",
+      "visible": true,
+      "data": {
+        "title": "¿Cómo funciona?",
+        "steps": [
+          "Elegís el tipo de lectura y completás tus datos.",
+          "Pagás de forma segura con Mercado Pago.",
+          "Recibís tu lectura al instante en pantalla y por email."
+        ]
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "visible": true,
+      "data": {
+        "title": "Lo que dicen quienes ya consultaron",
+        "items": [
+          {
+            "name": "María P.",
+            "text": "Llegué perdida y salí con claridad. Noe tiene una sensibilidad enorme para leer entre líneas."
+          },
+          {
+            "name": "Sofía G.",
+            "text": "La lectura fue tan certera que me quedé en silencio un rato largo. Muy recomendable."
+          },
+          {
+            "name": "Diego R.",
+            "text": "No creía mucho en esto. Me sorprendió lo profundo y útil que resultó."
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "visible": true,
+      "data": {
+        "title": "Preguntas frecuentes",
+        "items": [
+          {
+            "q": "¿Cómo recibo la lectura?",
+            "a": "Ni bien se acredita el pago, te aparece en pantalla y también te llega un resumen por email."
+          },
+          {
+            "q": "¿Cuánto tarda?",
+            "a": "La lectura se genera al instante después de confirmar el pago."
+          },
+          {
+            "q": "¿Puedo repreguntar?",
+            "a": "Si necesitás profundizar, podés sacar una lectura adicional cuando gustes."
+          },
+          {
+            "q": "¿Es confidencial?",
+            "a": "Siempre. Tus consultas y datos quedan entre vos y yo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "visible": true,
+      "data": {
+        "title": "¿Lista para escuchar lo que las cartas tienen para vos?",
+        "buttonText": "Consultar ahora"
+      }
+    }
+  ]
+}

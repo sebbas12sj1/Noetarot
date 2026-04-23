@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noe Tarot — Lecturas de Tarot</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="stars"></div>
+
+  <nav class="topbar">
+    <a href="#top" class="brand" id="brandLink">Noe Tarot</a>
+    <div class="nav-links">
+      <a href="#services">Consultas</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#faq">Preguntas</a>
+    </div>
+  </nav>
+
+  <main id="sections-root"></main>
+
+  <!-- Modal de consulta -->
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="close" id="closeModal" aria-label="Cerrar">×</button>
+      <h2 id="modal-title">Tu consulta</h2>
+      <p class="modal-sub" id="modalSub"></p>
+      <form id="consultForm">
+        <label><span>Nombre</span><input type="text" name="nombre" required minlength="2" /></label>
+        <label><span>Email</span><input type="email" name="email" required /></label>
+        <div id="questions"></div>
+        <p class="total">Total: <strong id="totalPrice"></strong></p>
+        <button type="submit" class="btn btn-pay" id="submitBtn">Ir a pagar</button>
+        <p class="mp-note">Pago seguro vía Mercado Pago</p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> <span id="footerBrand">Noe Tarot</span> · Las lecturas son orientativas</p>
+    <p class="admin-link"><a href="/admin">Editor</a></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

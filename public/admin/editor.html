@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editor Visual</title>
+  <link rel="stylesheet" href="/admin/editor.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🔮 Editor Visual</div>
+    <div class="top-actions">
+      <span id="saveStatus" class="save-status">Sin cambios</span>
+      <button id="previewBtn" class="btn-ghost">Ver página</button>
+      <button id="saveBtn" class="btn-primary">Guardar cambios</button>
+      <button id="logoutBtn" class="btn-ghost">Salir</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Left: sections list + add menu -->
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <h2>Secciones</h2>
+        <p class="hint">Arrastrá para reordenar</p>
+      </div>
+
+      <ul id="sectionList" class="section-list"></ul>
+
+      <div class="add-section">
+        <button id="addSectionBtn" class="btn-primary wide">+ Agregar sección</button>
+        <div id="addMenu" class="add-menu" hidden>
+          <button data-type="hero">✨ Portada</button>
+          <button data-type="about">👤 Sobre mí</button>
+          <button data-type="services">💳 Servicios</button>
+          <button data-type="how">📋 Cómo funciona</button>
+          <button data-type="testimonials">💬 Testimonios</button>
+          <button data-type="faq">❓ Preguntas frecuentes</button>
+          <button data-type="cta">📢 Llamado a la acción</button>
+          <button data-type="text">📝 Texto libre</button>
+        </div>
+      </div>
+
+      <div class="sidebar-foot">
+        <button id="openThemeBtn" class="btn-ghost wide">🎨 Colores</button>
+        <button id="openPackagesBtn" class="btn-ghost wide">💰 Precios y servicios</button>
+        <button id="openSiteBtn" class="btn-ghost wide">🌐 Datos del sitio</button>
+      </div>
+    </aside>
+
+    <!-- Center: preview -->
+    <main class="preview-pane">
+      <div class="device-bar">
+        <button class="device-btn active" data-device="desktop">🖥 Escritorio</button>
+        <button class="device-btn" data-device="mobile">📱 Móvil</button>
+      </div>
+      <div id="previewFrameWrap" class="preview-frame-wrap desktop">
+        <iframe id="preview" src="/" title="Vista previa"></iframe>
+      </div>
+    </main>
+
+    <!-- Right: properties panel -->
+    <aside class="properties">
+      <div id="propsHead" class="props-head">
+        <h3 id="propsTitle">Seleccioná una sección</h3>
+        <p class="hint" id="propsHint">Elegí una sección en la lista para editarla.</p>
+      </div>
+      <div id="propsBody" class="props-body"></div>
+    </aside>
+  </div>
+
+  <!-- Theme modal -->
+  <div class="dialog-backdrop" id="themeDialog" hidden>
+    <div class="dialog">
+      <header><h3>🎨 Colores</h3><button class="close" data-close>×</button></header>
+      <div class="dialog-body" id="themeForm"></div>
+    </div>
+  </div>
+
+  <!-- Packages modal -->
+  <div class="dialog-backdrop" id="packagesDialog" hidden>
+    <div class="dialog wide">
+      <header><h3>💰 Precios y servicios</h3><button class="close" data-close>×</button></header>
+      <div class="dialog-body" id="packagesForm"></div>
+    </div>
+  </div>
+
+  <!-- Site info modal -->
+  <div class="dialog-backdrop" id="siteDialog" hidden>
+    <div class="dialog">
+      <header><h3>🌐 Datos del sitio</h3><button class="close" data-close>×</button></header>
+      <div class="dialog-body" id="siteForm"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="/admin/editor.js"></script>
+</body>
+</html>

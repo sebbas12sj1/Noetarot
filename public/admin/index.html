@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editor — Acceso</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/admin/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="login-box">
+    <div class="moon"></div>
+    <h1>Editor</h1>
+    <p>Ingresá con tu contraseña para editar la página.</p>
+    <form id="loginForm">
+      <label>
+        <span>Contraseña</span>
+        <input type="password" name="password" required autofocus />
+      </label>
+      <button type="submit" class="btn" id="btn">Entrar</button>
+      <p class="err" id="err"></p>
+    </form>
+  </div>
+
+  <script src="/admin/login.js"></script>
+</body>
+</html>
